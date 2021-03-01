@@ -37,7 +37,49 @@
 
   <properties>
     <java.version>11</java.version>
+    <mapstruct.version>1.4.2.Final</mapstruct.version>
+    <jaxb.version>3.0.0</jaxb.version>
+    <jaxb-api.version>2.3.1</jaxb-api.version>
+    <awaitility.version>4.0.3</awaitility.version>
   </properties>
+
+  <dependencyManagement>
+    <dependencies>
+
+      <!--MapStruct-->
+      <dependency>
+        <groupId>org.mapstruct</groupId>
+        <artifactId>mapstruct</artifactId>
+        <version>${mapstruct.version}</version>
+      </dependency>
+
+      <!--JAXB-->
+      <dependency>
+        <groupId>javax.xml.bind</groupId>
+        <artifactId>jaxb-api</artifactId>
+        <version>${jaxb-api.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.sun.xml.bind</groupId>
+        <artifactId>jaxb-core</artifactId>
+        <version>${jaxb.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.sun.xml.bind</groupId>
+        <artifactId>jaxb-impl</artifactId>
+        <version>${jaxb.version}</version>
+      </dependency>
+
+      <!--Awaitability-->
+      <dependency>
+        <groupId>org.awaitility</groupId>
+        <artifactId>awaitility</artifactId>
+        <version>${awaitility.version}</version>
+        <scope>test</scope>
+      </dependency>
+
+    </dependencies>
+  </dependencyManagement>
 
 </project>
 
