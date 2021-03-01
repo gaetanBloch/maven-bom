@@ -17,6 +17,24 @@
 
   <packaging>pom</packaging>
 
+  <licenses>
+    <license>
+      <name>The Unlicense</name>
+      <url>https://unlicense.org/</url>
+    </license>
+  </licenses>
+
+  <organization>
+    <name>gbloch</name>
+  </organization>
+
+  <developers>
+    <developer>
+      <name>Gaëtan Bloch</name>
+      <organization>gbloch</organization>
+    </developer>
+  </developers>
+
   <properties>
     <java.version>11</java.version>
   </properties>
